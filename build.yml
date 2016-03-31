@@ -11,17 +11,3 @@ image_resource:
   source:
     repository: ruby
     tag: 2.3.0
-resources:
-- name: flight-school
-  type: git
-  source:
-    uri: https://github.com/reagul/flight-school
-    branch: master
-
-jobs:
-- name: test-app
-  plan:
-  - get: flight-school
-    trigger: true
-  - task: tests
-    file: flight-school/build.yml
