@@ -1,12 +1,12 @@
 resources:
-- name: flight-school
+- name: Fetch-Git
   type: git
   source:
     uri: https://github.com/reagul/flight-school
     branch: master
 
 jobs:
-- name: test-app
+- name: TestApp
   plan:
   - get: flight-school
     trigger: true
