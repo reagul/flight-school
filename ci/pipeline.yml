@@ -1,5 +1,5 @@
 resources:
-- name: GIT-Fetch
+- name: flight-school
   type: git
   source:
     uri: https://github.com/reagul/flight-school
@@ -8,7 +8,7 @@ resources:
 jobs:
 - name: test-app
   plan:
-  - get: GIT-Fetch
+  - get: flight-school
     trigger: true
   - task: tests
     file: flight-school/build.yml

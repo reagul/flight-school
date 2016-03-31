@@ -1,7 +1,7 @@
 platform: linux
 
 inputs:
-- name: GIT-Fetch
+- name: flight-school
 
 run:
   path: ./flight-school/ci/test.sh
