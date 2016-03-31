@@ -1,3 +1,4 @@
 require './lib/app'
-run x
+
 run FlightSchool
+run abc
