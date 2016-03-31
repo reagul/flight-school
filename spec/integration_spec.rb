@@ -8,9 +8,6 @@ require "app"
 RSpec.describe "The FlightSchool application" do
   include Rack::Test::Methods
 
-  def if __FILE__ == $PROGRAM_NAME
-    flight-school
-  end
   def app
     FlightSchool
   end
